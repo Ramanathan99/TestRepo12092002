@@ -3,7 +3,12 @@ def test2 = "b"
 def test3 = "c"
 
 node(){
-stage("print value of test1 ")
+
+stage("shell commands"){
+sh "ls -la"
+}
+  
+  stage("print value of test1 ")
 {
   echo "value of test is ${test1}"
 }
