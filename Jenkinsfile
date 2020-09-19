@@ -4,6 +4,12 @@ def test3 = "c"
 
 node(){
 
+  stage ('cloning repo')
+    {
+      checkout scm
+}
+  
+  
 stage("shell commands"){
 sh "ls -la"
 }
